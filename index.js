@@ -61,13 +61,10 @@ app.post('/projects', (req,res) => {
 app.post('/projects/:id/tasks', checkIdExist,(req,res) => {
     const { id } = req.params
     const {title} = req.body
-
-    const getIndex = projects.findIndex(b => b.id == id)
-    projects[getIndex].tasks = {title}
+    const project = projects.find(b => b.id == id)
+    project.tasks.push(title)
     res.json(projects)
 
 })
-
-
 
 app.listen(3000)
