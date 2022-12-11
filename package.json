@@ -9,7 +9,7 @@
   "author": "Marcos Teotônio <professormarcos2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
